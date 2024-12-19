@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "chisel-and-bits-armory",
+	"version": "${version}",
+	"name": "Chisel-and-Bits-Armory",
+	"description": "This mod adds custom armor, tools, and weapons that can be customized with chisel and bits.",
+	"authors": [
+		"Dawn Dev"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/chisel-and-bits-armory/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dawndev.chiselandbitsarmory.modid.ChiselandBitsArmory"
+		],
+		"client": [
+			"net.dawndev.chiselandbitsarmory.modid.ChiselandBitsArmoryClient"
+		]
+		,
+		"fabric-datagen": [
+			"net.dawndev.chiselandbitsarmory.modid.ChiselandBitsArmoryDataGenerator"
+		]
+	},
+	"mixins": [
+		"chisel-and-bits-armory.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
